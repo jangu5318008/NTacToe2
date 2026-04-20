@@ -1,4 +1,4 @@
-CMakeFiles/NTacToe2.dir/main.cpp.o: /Users/jason/Notes/NTacToe2/main.cpp \
+CMakeFiles/NTacToe2.dir/main.cpp.o: /Users/jason/NTacToe2/main.cpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iostream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__config \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__config_site \
@@ -790,4 +790,4 @@ CMakeFiles/NTacToe2.dir/main.cpp.o: /Users/jason/Notes/NTacToe2/main.cpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/stack.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/print \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/unistd.h \
-  /Users/jason/Notes/NTacToe2/GameManager.h
+  /Users/jason/NTacToe2/GameManager.h

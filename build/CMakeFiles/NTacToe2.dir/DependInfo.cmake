@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/jason/Notes/NTacToe2/main.cpp" "CMakeFiles/NTacToe2.dir/main.cpp.o" "gcc" "CMakeFiles/NTacToe2.dir/main.cpp.o.d"
+  "/Users/jason/NTacToe2/main.cpp" "CMakeFiles/NTacToe2.dir/main.cpp.o" "gcc" "CMakeFiles/NTacToe2.dir/main.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

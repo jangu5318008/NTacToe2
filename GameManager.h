@@ -24,6 +24,7 @@ public:
 
         n = boardSize;
         playerChar = 'X';
+        //conversion from 2D array to 2D pointer
         board = new char*[n];
          for (int i = 0; i < n; i++) {
             board[i] = new char[n];
@@ -31,6 +32,7 @@ public:
                 board[i][j] = '_';
             }
          }
+         //*(((*board + i) + j) = '_';
 
     }
     void GameManager::printBoard() {
