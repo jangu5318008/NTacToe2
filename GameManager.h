@@ -141,6 +141,7 @@ public:
             return true;
         }
 
+    //draw logic
     bool boardFull = true;
     for (int row = 0; row < n; row++) {
         for (int col = 0; col < n; col++) {
@@ -149,7 +150,7 @@ public:
                 break;
             }
         }
-        if (!boardFull) {
+        if (!boardFull) 
             break;
         }
         if (boardFull) {
@@ -158,7 +159,6 @@ public:
     }
     return false;
     }
-}
 }
 }
 //};
