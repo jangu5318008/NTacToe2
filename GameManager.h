@@ -21,42 +21,39 @@ public:
 };
 
     GameManager::GameManager(int boardSize) {
-
         n = boardSize;
         playerChar = 'X';
         //conversion from 2D array to 2D pointer
         board = new char*[n];
-         for (int i = 0; i < n; i++) {
+        for (int i = 0; i < n; i++) {
             board[i] = new char[n];
             for (int j = 0; j < n; j++) {
                 board[i][j] = '_';
             }
-         }
+        }
          //*(((*board + i) + j) = '_';
-
     }
     void GameManager::printBoard() {
-    cout << "\n   ";
+        cout << "\n   ";
     for (int col = 1; col <=n; col++) {
         cout << col << ' ';
     }
-    cout << "\n";
+        cout << "\n";
 
     for (int row = 0; row < n; row++) {
-        cout << (row + 1) << ": ";
+            cout << (row + 1) << ": ";
         for (int col = 0; col < n; col++) {
             cout << board[row][col] << ' ';
         }
-        cout << '\n';
+            cout << '\n';
     }
-
     }
     void GameManager::togglePlayerChar() {
     if (playerChar == 'X') {
         playerChar = 'O';
-    } else {
+    } 
+    else {
         playerChar = 'X';
-
     }
 }
     void GameManager::getPlayerInput() {
@@ -70,21 +67,20 @@ public:
             cout << "Player " << playerChar << ", enter column [1:" << n << "]: ";
             cin >> colInput;
         } while (colInput < 1 || colInput > n);
-        row = rowInput - 1; 
-        col = colInput - 1; 
-    if (board[row][col] != '_') {
-        cout << "Space already taken. Pick another spot.\n";
-    }
-} while (board[row][col] != '_');
-  board[row][col] = playerChar;
+            row = rowInput - 1; 
+            col = colInput - 1; 
+        if (board[row][col] != '_') {
+            cout << "Space already taken. Pick another spot.\n";
+        }
+        } while (board[row][col] != '_');
+        board[row][col] = playerChar;
     }
     bool GameManager::isGameOver() {
-    for (int row = 0; row < n; row++) {
-        char winner = board[row][0]; 
+        for (int row = 0; row < n; row++) {
+            char winner = board[row][0]; 
         if (winner == '_') {
             continue;
         }
-
         bool rowWin = true; 
         for (int col = 1; col < n; col++) {
             if (board[row][col] != winner) {
@@ -96,7 +92,6 @@ public:
             cout << "Player " << winner << " wins!\n"; 
             return true;
         }
-
     }
 
     for (int col = 0; col < n; col++) {
@@ -104,20 +99,17 @@ public:
         if (winner == '_') {
             continue; 
         }
-
-        bool colWin = true;
+    bool colWin = true;
         for (int row = 1; row < n; row++) {
             if (board[row][col] != winner) {
             colWin = false; 
             break;
-            }
         }
-    
+        }
     if (colWin) {
         cout << "Player " << winner << " wins!\n"; 
         return true;
     }
-
     char forwardWinner = board[0][0];
     if (forwardWinner != '_') {
         bool forwardWin = true;
@@ -166,10 +158,9 @@ public:
     }
     return false;
     }
-
 }
 }
-    }
+}
 //};
 
 #endif // BOARD_H_INCLUDED
